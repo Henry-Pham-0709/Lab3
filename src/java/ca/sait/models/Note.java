@@ -8,14 +8,14 @@ import java.io.Serializable;
  */
 public class Note implements Serializable {
     private String title;
-    private String content;
+    private String contents;
 
     public Note() {
     }
 
     public Note(String title, String content) {
         this.title = title;
-        this.content = content;
+        this.contents = content;
     }
     
 
@@ -28,11 +28,11 @@ public class Note implements Serializable {
     }
 
     public String getContent() {
-        return content;
+        return contents;
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.contents = content;
     }
     
     

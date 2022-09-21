@@ -17,10 +17,11 @@
         <h2> View Note</h2>
         
         <div><strong>Title:</strong> ${note.getTitle()}</div>
-        
+        <br>
         <strong>Contents:</strong><br>
         <div>${note.getContent()}</div>
+        <br>
         
-        <a href="url">Edit</a>
+        <a href="note?edit">Edit</a>
     </body>
 </html>

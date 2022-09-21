@@ -16,10 +16,17 @@
         
         <h2>Edit Note</h2>
         
-        <div>Title: <input type="text" value=`${note.getTitle()}`></div>
+        <form action="note" method="post">
+        <div>
+            <label>Title:</label>
+            <input type="text" value="${note.getTitle()}" name="title">
+        </div>
         
-        <div>Contents: <textarea value=`${note.getContent()}`></textarea>
-        
-        <a href="url">Edit</a>
+        <div>
+            <label for="contents">Contents: </label>
+            <textarea id="contents" rows="7" cols="25" name="contents">${note.getContent()}</textarea>
+        </div>
+        <button type="submit">Save</button>
+        </form>
     </body>
 </html>
